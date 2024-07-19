@@ -391,24 +391,45 @@
     </style>
 
     <style>
+        .iframe-section {
+            width: 100%;
+            background-image: url('https://img.freepik.com/fotos-gratis/pesquisadores-em-busca-de-fontes-alternativas-de-energia_23-2149311492.jpg?t=st=1721395984~exp=1721399584~hmac=2ecfbaef2c1f54bc2647ca58184d17ee996ed9c903d28e52f185df70d95fd432&w=1380');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.5);
+
+        }
+
+        .overlay {
+            background: rgba(0, 128, 0, 0.18);
+            backdrop-filter: blur(3px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
         .iframe-container {
-            /* padding: 10px 0; */
-            background-color: transparent;
             position: relative;
             width: 90%;
             max-width: 1000px;
-            margin: 50px auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
-                0 6px 20px rgba(0, 0, 0, 0.1);
+            margin: auto auto;
+            box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
             border-radius: 8px;
             overflow: hidden;
             transition: box-shadow 0.3s ease-in-out;
             margin-top: 100px;
+            padding-bottom: 7px;
+            background-color: #f8f9fb;
+            margin-bottom: 50px;
+
         }
 
         iframe {
             width: 100%;
-            height: 1000px;
+            height: 1750px;
             border: none;
         }
     </style>
@@ -1592,9 +1613,15 @@
             </ul>
         </div>
     </nav>
-    <div class="iframe-container">
-        <iframe src="https://app.flowch.com/#/public/b3a1686d-4b55-46f0-ad1b-cdc8370efab1/a95a6592-246a-2235-e7e3-3b4b00956d5a"></iframe>
+    <div class="iframe-section">
+        <div class="overlay">
+            <div class="iframe-container">
+                <iframe src="https://app.flowch.com/#/public/b3a1686d-4b55-46f0-ad1b-cdc8370efab1/a95a6592-246a-2235-e7e3-3b4b00956d5a"></iframe>
+            </div>
+        </div>
+
     </div>
+
 
     <footer class="global_footer footer_1 snipcss-GXITA">
         <div class="container">
