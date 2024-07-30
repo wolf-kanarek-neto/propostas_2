@@ -459,7 +459,7 @@
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
     </style> <!-- Facebook Meta Info -->
-    <meta property="og:url" content="https://www.omnitele.com.br/proposta-1" class="s123-js-pjax">
+    <meta property="og:url" content="https://www.omnitele.com.br" class="s123-js-pjax">
     <meta property="og:image" content="https://images.cdn-files-a.com/uploads/7734567/800_643076119d57b.jpg" class="s123-js-pjax">
     <meta property="og:description" content="Proposta - OMNI Telecomm" class="s123-js-pjax">
     <meta property="og:title" content="Proposta - OMNI Telecomm" class="s123-js-pjax">
@@ -469,13 +469,12 @@
     <meta itemprop="description" content="Proposta - OMNI Telecomm" class="s123-js-pjax">
     <meta itemprop="image" content="https://images.cdn-files-a.com/uploads/7734567/800_643076119d57b.jpg" class="s123-js-pjax"> <!-- Twitter Meta Info -->
     <meta name="twitter:card" content="summary" class="s123-js-pjax">
-    <meta name="twitter:url" content="https://www.omnitele.com.br/proposta-1" class="s123-js-pjax">
+    <meta name="twitter:url" content="https://www.omnitele.com.br" class="s123-js-pjax">
     <meta name="twitter:title" content="Proposta - OMNI Telecomm" class="s123-js-pjax">
     <meta name="twitter:description" content="Proposta - OMNI Telecomm" class="s123-js-pjax">
     <meta name="twitter:image" content="https://images.cdn-files-a.com/uploads/7734567/800_643076119d57b.jpg" class="s123-js-pjax">
     <meta name="robots" content="all" class="s123-js-pjax">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
-    <script type="application/javascript" src="https://cdn.oihe.in/scripts/widget/v2/h-widget-min.js" data-companyid="4290070b-9f50-4895-97e4-d8ead38bc98e" data-widgetid="83892cb7-dcbf-42eb-87b6-aed6f702f686" data-environment="staging"></script> <!-- Website CSS variables -->
     <style>
         :root {
             --global_main_color: #008000;
@@ -6639,19 +6638,229 @@
             border: none;
         }
     </style>
-    <script>
-          window.onload = function () {
-            var iframe = document.getElementById('iframe');
-            iframe.src = `https://app.flowch.com/#/public/b3a1686d-4b55-46f0-ad1b-cdc8370efab1/a95a6592-246a-2235-e7e3-3b4b00956d5a/${new URLSearchParams(window.location.search).get('id')}/pt`;
-        }
-    </script>
+
     <link rel="stylesheet" href="https://cdn-cms-s.f-static.net/versions/2/css/websiteCSS.css?w=&orderScreen=&websiteID=7734567&onlyContent=&tranW=&v=css_y226_50730845" class="reloadable-css" type="text/css"> <!-- Froala Editor CSS --> <!-- Google AdSense -->
     <script type="application/ld+json">    {"@context":"https://schema.org","@type":"WebSite","url":"https://www.omnitele.com.br","name":"OMNI Telecomm","potentialAction":{"@type":"SearchAction","target":"https://www.omnitele.com.br/-search/{search_term_string}/","query-input":"required name=search_term_string"}}    </script>
+
+    <!-- <script type="application/javascript" src="https://cdn.oihe.in/scripts/widget/v2/h-widget-min.js" data-companyid="4290070b-9f50-4895-97e4-d8ead38bc98e" data-widgetid="83892cb7-dcbf-42eb-87b6-aed6f702f686" data-environment="staging"></script> -->
+    <style>
+        .h-widget-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            cursor: pointer;
+            z-index: 999999997;
+        }
+
+
+        .h-widget-form-wrapper {
+            position: fixed;
+            bottom: 150px;
+            right: 30px;
+            max-width: 400px;
+            z-index: 999999998;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .h-widget-form {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .h-form-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #0F5F54;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 18px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .h-close-button {
+            font-weight: 400;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .h-form-content {
+            display: flex;
+            flex-direction: column;
+            background-color: #E9E4DE;
+            padding: 25px 20px 15px 20px;
+            position: relative;
+        }
+
+        .h-form-content label {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .h-widget-form input::placeholder,
+        .h-widget-form select::placeholder {
+            color: #7B8BB2;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .h-form-content label .label-text {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .h-widget-form input,
+        .h-widget-form select {
+            width: 270px;
+            text-align: left;
+            padding: 15px 10px;
+            font-size: 14px;
+            color: #000000;
+            border: 0 solid;
+            border-radius: 8px;
+            background-color: #FCFCFC;
+        }
+
+        @media (max-width: 600px) {
+            .h-form-actions {
+                padding: 15px 10px;
+            }
+        }
+
+        .h-form-actions {
+            background-color: #FFFFFF;
+            border-radius: 0 0 10px 10px;
+            padding: 15px;
+        }
+
+        .h-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .h-checkbox input {
+            flex: 1;
+        }
+
+        .h-widget-form button:disabled {
+            background-color: rgb(174, 174, 174);
+            cursor: not-allowed;
+        }
+
+        .h-widget-form button {
+            background-color: #6BC062;
+            color: #FFF;
+            border: 0;
+            border-radius: 5px;
+            width: 100%;
+            margin: 20px 0 0 0;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+
+
+    <script>
+
+        closeWhats = function () {
+            document.getElementById('whats-form').innerHTML = ""
+
+        }
+        openWhats = function () {
+            window.open('https://api.whatsapp.com/send/?phone=5508001001234&text=Atendimento+%23529685%3A+Ol%C3%A1%2C+quero+saber+mais%21&type=phone_number&app_absent=0', '_blank'); // Substitua pelo URL para onde você deseja redirecionar
+
+
+        }
+        window.onload = function () {
+            document.getElementById('whats-button').addEventListener('click', function () {
+
+                if (document.getElementById('whats-form').innerHTML) {
+                    document.getElementById('whats-form').innerHTML = ""
+                } else {
+
+                    const html = `
+            <div class="h-widget-form-wrapper">
+                <form class="h-widget-form">
+                    <div class="h-form-header">
+                        <div>Contato via WhatsApp </div>
+                        <div class="h-close-button" onclick="closeWhats()">✖ </div>
+                    </div>
+                    <div class="h-form-content">
+                        <label style="opacity: 1; pointer-events: auto;">
+                            <span class="label-text">Nome:</span>
+                            <input type="text" name="name" placeholder="Digite o seu nome" required="" minlength="5" autocomplete="name">
+                        </label>
+                        <label style="opacity: 1; pointer-events: auto;">
+                            <span class="label-text">WhatsApp:</span>
+                            <input type="text" name="phonenumber" placeholder="(00) 00000-0000" minlength="15" onkeyup="hWidget.phoneMask(event)" onchange="hWidget.phoneMask(event)" required="" autocomplete="phone">
+                        </label>
+                        <label style="opacity: 1; pointer-events: auto;">
+                            <span class="label-text">E-mail:</span>
+                            <input type="email" name="email" placeholder="seu-email@provedor.com" required="" minlength="15" autocomplete="email">
+                        </label>
+                        <p id="h-success-message" style="display: none;"></p>
+                    </div>
+                    <div class="h-form-actions" style="background-color: rgb(255, 255, 255);">
+                        <label class="h-checkbox" style="opacity: 1; pointer-events: auto;">
+                            <input type="checkbox" name="check" required="" onclick="hWidget.handleCheckClick(event)" style="opacity: 1; pointer-events: auto;">
+                            <span class="label-text" style="opacity: 1; pointer-events: auto;">Eu concordo em receber comunicações e ofertas de acordo com o meu interesse. </span>
+                        </label>
+                        <button id="h-quick-start" style="opacity: 1; pointer-events: auto;" onclick="openWhats()">Iniciar uma conversa </button>
+                    </div>
+                </form>
+            </div>
+    `;
+
+                    document.getElementById('whats-form').innerHTML = html;
+                    const checkbox = document.querySelector("input[name='check']");
+                    const button = document.getElementById("h-quick-start");
+
+                    // Inicialmente desabilita o botão
+                    button.disabled = !checkbox.checked;
+
+                    checkbox.addEventListener("change", function () {
+                        button.disabled = !this.checked;
+                    });
+
+                }
+
+            });
+
+
+            var iframe = document.getElementById('iframe');
+            var id = new URLSearchParams(window.location.search).get('id');
+            iframe.src = `https://app.flowch.com/#/public/b3a1686d-4b55-46f0-ad1b-cdc8370efab1/a95a6592-246a-2235-e7e3-3b4b00956d5a/${id}/pt`;
+            if (id) {
+                iframe.style.height = '4280px';
+            } else {
+                iframe.style.height = '1000px';
+
+            }
+        }
+
+    </script>
+
 </head>
 
 <body id="page-top">
+    <div class="h-widget-float" id="whats-button"><img src="https://cdn.oihe.in/scripts/widget/v2/h-widget-whatsapp.png?v=2" class="h-widget-float"></div>
+    <div id="whats-form"></div>
     <div class="body">
-        <div id="websiteHeader"><input type="hidden" id="websiteHeaderSettings" class="s123-js-pjax" value="{&quot;btns&quot;:{&quot;phone&quot;:{&quot;isActive&quot;:false,&quot;phoneLinkIcon&quot;:{&quot;icon&quot;:&quot;fa fa-phone&quot;},&quot;headerPhoneNumber_style&quot;:&quot;1&quot;,&quot;addDailcCode&quot;:&quot;+55-0800-100-1234&quot;},&quot;email&quot;:{&quot;isActive&quot;:false,&quot;headerEmail&quot;:&quot;contato@omnitele.com.br&quot;,&quot;headerEmail_style&quot;:&quot;1&quot;},&quot;address&quot;:{&quot;isActive&quot;:false},&quot;social&quot;:{&quot;isActive&quot;:true,&quot;isEmpty&quot;:false},&quot;search&quot;:{&quot;isActive&quot;:false},&quot;wishList&quot;:{&quot;isActive&quot;:false},&quot;clientZone&quot;:{&quot;isActive&quot;:false,&quot;isManageURL&quot;:&quot;&quot;},&quot;cart&quot;:{&quot;isActive&quot;:false,&quot;showMenuActionButtons&quot;:&quot;&lt;a class=\&quot;actionButton btn-primary-action-button-4\&quot; role=\&quot;button\&quot;&gt;&lt;i class=\&quot;svg-m s123-icon-converter \&quot; data-icon-name=\&quot;shopping-cart\&quot; style=\&quot; mask: url('https:\/\/images.cdn-files-a.com\/ready_uploads\/svg\/shopping-cart.svg?v=2'); -webkit-mask: url('https:\/\/images.cdn-files-a.com\/ready_uploads\/svg\/shopping-cart.svg?v=2');\&quot; data-ie11-classes=\&quot;\&quot; alt=\&quot;shopping-cart\&quot;&gt;&amp;nbsp;&lt;\/i&gt;&lt;span class=\&quot;count\&quot;&gt;&lt;\/span&gt;&lt;\/a&gt;&quot;,&quot;hasOnlineStore&quot;:false},&quot;actionsButtons&quot;:{&quot;isActive&quot;:false,&quot;button1&quot;:{&quot;isActive&quot;:false,&quot;showMenuActionButtons&quot;:&quot;&lt;a href=\&quot;https:\/\/omni.wts.chat\/trial\&quot; target=\&quot;_blank\&quot;&gt;&lt;button {{videoAttributes}} type=\&quot;button\&quot; id=\&quot;topAction_buttonText_1\&quot; class=\&quot;btn btn-primary btn-primary-action-button-2\&quot;&gt;&lt;span class=\&quot;m-b-t\&quot;&gt;Teste Gr\u00e1tis&lt;\/span&gt;&lt;\/button&gt;&lt;\/a&gt;&quot;},&quot;button2&quot;:{&quot;isActive&quot;:false,&quot;showMenuActionButtons&quot;:&quot;&lt;a onclick=\&quot;ScrollToModule('','1');\&quot;&gt;&lt;button {{videoAttributes}} type=\&quot;button\&quot; id=\&quot;topAction_buttonText_2\&quot; class=\&quot;btn btn-primary btn-primary-action-button-1\&quot; style=\&quot;display:none\&quot;&gt;&lt;span class=\&quot;m-b-t\&quot;&gt;&lt;\/span&gt;&lt;\/button&gt;&lt;\/a&gt;&quot;}}},&quot;headerCallToActionsButtons&quot;:{},&quot;headerLayout&quot;:1,&quot;languges&quot;:&quot;&lt;li class=\&quot;website-languages-menu\&quot;&gt;&lt;a class=\&quot;btn website-languages-menu-link\&quot;&gt;&lt;img src=\&quot;https:\/\/cdn-cms-s.f-static.net\/files\/vendor\/flag-icons-main\/flags\/4x3\/br.svg\&quot; style=\&quot;width:auto;height:14px;\&quot;&gt;&lt;\/a&gt;&lt;\/i&gt;&quot;,&quot;multiCurrency&quot;:&quot;&quot;,&quot;layoutID&quot;:&quot;1&quot;,&quot;onepage&quot;:&quot;0&quot;,&quot;isMenuMainColor&quot;:false}" data-arranged-icons="false">
+        <div id="websiteHeader">
+            <input type="hidden" id="websiteHeaderSettings" class="s123-js-pjax" value="{&quot;btns&quot;:{&quot;phone&quot;:{&quot;isActive&quot;:false,&quot;phoneLinkIcon&quot;:{&quot;icon&quot;:&quot;fa fa-phone&quot;},&quot;headerPhoneNumber_style&quot;:&quot;1&quot;,&quot;addDailcCode&quot;:&quot;+55-0800-100-1234&quot;},&quot;email&quot;:{&quot;isActive&quot;:false,&quot;headerEmail&quot;:&quot;contato@omnitele.com.br&quot;,&quot;headerEmail_style&quot;:&quot;1&quot;},&quot;address&quot;:{&quot;isActive&quot;:false},&quot;social&quot;:{&quot;isActive&quot;:true,&quot;isEmpty&quot;:false},&quot;search&quot;:{&quot;isActive&quot;:false},&quot;wishList&quot;:{&quot;isActive&quot;:false},&quot;clientZone&quot;:{&quot;isActive&quot;:false,&quot;isManageURL&quot;:&quot;&quot;},&quot;cart&quot;:{&quot;isActive&quot;:false,&quot;showMenuActionButtons&quot;:&quot;&lt;a class=\&quot;actionButton btn-primary-action-button-4\&quot; role=\&quot;button\&quot;&gt;&lt;i class=\&quot;svg-m s123-icon-converter \&quot; data-icon-name=\&quot;shopping-cart\&quot; style=\&quot; mask: url('https:\/\/images.cdn-files-a.com\/ready_uploads\/svg\/shopping-cart.svg?v=2'); -webkit-mask: url('https:\/\/images.cdn-files-a.com\/ready_uploads\/svg\/shopping-cart.svg?v=2');\&quot; data-ie11-classes=\&quot;\&quot; alt=\&quot;shopping-cart\&quot;&gt;&amp;nbsp;&lt;\/i&gt;&lt;span class=\&quot;count\&quot;&gt;&lt;\/span&gt;&lt;\/a&gt;&quot;,&quot;hasOnlineStore&quot;:false},&quot;actionsButtons&quot;:{&quot;isActive&quot;:false,&quot;button1&quot;:{&quot;isActive&quot;:false,&quot;showMenuActionButtons&quot;:&quot;&lt;a href=\&quot;https:\/\/omni.wts.chat\/trial\&quot; target=\&quot;_blank\&quot;&gt;&lt;button {{videoAttributes}} type=\&quot;button\&quot; id=\&quot;topAction_buttonText_1\&quot; class=\&quot;btn btn-primary btn-primary-action-button-2\&quot;&gt;&lt;span class=\&quot;m-b-t\&quot;&gt;Teste Gr\u00e1tis&lt;\/span&gt;&lt;\/button&gt;&lt;\/a&gt;&quot;},&quot;button2&quot;:{&quot;isActive&quot;:false,&quot;showMenuActionButtons&quot;:&quot;&lt;a onclick=\&quot;ScrollToModule('','1');\&quot;&gt;&lt;button {{videoAttributes}} type=\&quot;button\&quot; id=\&quot;topAction_buttonText_2\&quot; class=\&quot;btn btn-primary btn-primary-action-button-1\&quot; style=\&quot;display:none\&quot;&gt;&lt;span class=\&quot;m-b-t\&quot;&gt;&lt;\/span&gt;&lt;\/button&gt;&lt;\/a&gt;&quot;}}},&quot;headerCallToActionsButtons&quot;:{},&quot;headerLayout&quot;:1,&quot;languges&quot;:&quot;&quot;,&quot;multiCurrency&quot;:&quot;&quot;,&quot;layoutID&quot;:&quot;1&quot;,&quot;onepage&quot;:&quot;0&quot;,&quot;isMenuMainColor&quot;:false}" data-arranged-icons="false">
             <nav id="mainNav" class="hidden-xs navbar-default navbar-fixed-top  opacity-no">
                 <div class="site_container">
                     <div class="navbar-header"> <a href="https://www.omnitele.com.br" class="s123-site-logo navbar-brand s123-w-l-s page-unique s123-fast-page-load"><img alt="OMNI Telecomm" class="img-responsive" src="https://images.cdn-files-a.com/uploads/7734567/400_6421ca1b7cbc1.png"><span class="website-name website-name-preview-helper ">OMNI Telecomm</span></a> </div>
@@ -7369,7 +7578,7 @@
             dismiss: footerCustomTextJson.cookieConsent.button,
             learnMore: "Mais informa\u00e7\u00f5es",
             theme: 'https://cdn-cms-s.f-static.net/files/frameworks/cookieconsent-master/build/dark-bottom.css?v=y84014'
-        }; 
+        };
     </script>
     <script type="text/javascript" src="https://cdn-cms-s.f-static.net/files/frameworks/cookieconsent-master/build/cookieconsent.min.js?v=y84014" crossorigin="anonymous"></script> <!-- End Cookie Consent plugin --> <!-- Minimize JS files -->
     <script src="https://cdn-cms-s.f-static.net/versions/2/js/minimize_p1.js?v=y84014" crossorigin="anonymous"></script>
